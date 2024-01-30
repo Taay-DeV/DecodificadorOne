@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/gestao-de-relacionamento-com-o-cliente.png" type="image/png">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="nav">
+        <img src="assets/Logo.svg" class="nav__img">
+    </header>
+    <main class="program">
+        <section class="program__page">
+            <textarea cols="50" rows="10" wrap="hard" placeholder="Digite o texto que deseja criptografar"
+                class="program__textArea"></textarea>
+                <p class="error-message"></p>
+            <p class="program__p"><img src="assets/alert-icon.png" class="program__alert-icon">Apenas letras minúsculas
+                e sem acento</p>
+            <div class="program__buttons">
+                <button class="buttons__button1" onclick="crip()">Criptografar</button>
+                <button class="buttons__button2" onclick="descrip()">Descriptografar</button>
+            </div>
+
+        </section>
+        <div class="program__rec"><img src="assets/nomessage.svg" class="program__img">
+            <h1 class="program__rec__h1">Nenhuma mensagem encontrada</h1>
+            <p class="program__rec__p">Digite um texto que você deseja criptografar ou descriptografar</p>
+            <p class="program__rec__pHidden" hidden>HelloFriend</p>
+            <button class="program__rec__btn" id="copy-btn" onclick="copyText()">Copiar</button>
+        </div>
+    </main>
+    <footer class="fim">
+        <h5 class="texto__final">Desenvolvido por Taynara Barreto - Projeto ONE T6</h5>
+            <div class="link__final">
+                <a class="link__links" href="https://www.linkedin.com/in/taynara-barreto-109231230/" target="_blank"><img class="img__logo" src="assets/linkedin-icon2.png" alt="">Linkedln</a>
+                <a class="link__links" href="https://github.com/Taay-DeV" target="_blank"><img class="img__logo" src="assets/git-icon.png" alt="">GitHub</a>
+            </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
